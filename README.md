@@ -13,10 +13,10 @@ Usage
 Examples
 --------
 ![example ribbon](/examples/ribbon_1.png "Example Ribbon 1")
-![example ribbon](/examples/ribbon_1.png "Example Ribbon 2")
-![example ribbon](/examples/ribbon_1.png "Example Ribbon 3")
-![example ribbon](/examples/ribbon_1.png "Example Ribbon 4")
-![example ribbon](/examples/ribbon_1.png "Example Ribbon 5")
-![example ribbon](/examples/ribbon_1.png "Example Ribbon 6")
-![example ribbon](/examples/ribbon_1.png "Example Ribbon 7")
-![example ribbon](/examples/ribbon_1.png "Example Ribbon 8")
+![example ribbon](/examples/ribbon_2.png "Example Ribbon 2")
+![example ribbon](/examples/ribbon_3.png "Example Ribbon 3")
+![example ribbon](/examples/ribbon_4.png "Example Ribbon 4")
+![example ribbon](/examples/ribbon_5.png "Example Ribbon 5")
+![example ribbon](/examples/ribbon_6.png "Example Ribbon 6")
+![example ribbon](/examples/ribbon_7.png "Example Ribbon 7")
+![example ribbon](/examples/ribbon_8.png "Example Ribbon 8")
