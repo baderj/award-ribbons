@@ -6,9 +6,9 @@ Generate images of pseudo ribbons similar to those awarded by many armys.
 Usage
 -----
 1. `javac -g Ribbon.java`.
-2. `java Ribbon.class <nr>`
+2. `java -cp . Ribbon <nr>`
 
- Generates `<nr>` random ribbon images and save them in the current folder as `ribbon_1.png` to `ribbon_<nr>.png`.
+Generates `<nr>` random ribbon images and saves them in the current folder as `ribbon_1.png` to `ribbon_<nr>.png`.
 
 Examples
 --------

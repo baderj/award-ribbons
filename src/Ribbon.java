@@ -87,7 +87,7 @@ public class Ribbon {
 	 */
 	private void addPattern(int width, int height, Graphics2D g2d) {
 		int nr_colors = random.nextInt(3) + 2;
-		int density = random.nextInt(2) + 1;
+		float density = random.nextFloat()*2 + 1;
 		List<Color> colors = getRandomColors(nr_colors);
 		List<Integer> widths = new ArrayList<Integer>();
 
@@ -157,15 +157,15 @@ public class Ribbon {
 	 * @param density how dense the stripes should be
 	 * @return stripe width 
 	 */
-	private int getStripeWidth(int width, List<Integer> widths, int density) {
+	private int getStripeWidth(int width, List<Integer> widths, float density) {
 		if (random.nextFloat() < 0.2 || widths.size() == 0) {
-			int newwidth;
+			int newwidth = 0;
 			if (random.nextFloat() < 0.8)
 				newwidth = new Integer(
 						(int) ((Math.pow(2, random.nextFloat()) - 1) * width
-								/ density / 2));
-			else
-				newwidth = new Integer(5) + 3;
+								/ density / 2.0));
+			if( newwidth < 3)
+				newwidth = new Integer(10) + 3;
 			widths.add(newwidth);
 			return widths.get(widths.size() - 1);
 		} else {
@@ -237,9 +237,9 @@ public class Ribbon {
 	}
 
 	public static void main(String[] args) {
-		if (args.length - 1 == 1)
+		if (args.length != 1)
 			throw new IllegalArgumentException(
-					"usage: ribbons.jar <nr_of_ribbons>");
+					"usage: java -cp . Ribbon <nr_of_ribbons>");
 		int nr = 0;
 		try {
 			nr = Integer.parseInt(args[0]);
@@ -250,6 +250,5 @@ public class Ribbon {
 		Ribbon ribbon = new Ribbon();
 		for (int i = 1; i <= nr; i++)
 			ribbon.genAndSave("ribbon_" + i);
-
 	}
 }
